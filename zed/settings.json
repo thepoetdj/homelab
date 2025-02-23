@@ -4,8 +4,8 @@
     "metrics": false,
     "diagnostics": false
   },
-  "ui_font_size": 20,
-  "buffer_font_size": 18,
+  "ui_font_size": 18,
+  "ui_font_family": "FiraCode Nerd Font",
   "theme": {
     "mode": "system",
     "light": "One Light",

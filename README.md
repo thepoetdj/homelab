@@ -41,7 +41,7 @@ mkdir ~/.config/zed && cd ~/.config/zed
 ln -s /opt/homelab/zed/settings.json
 ```
 
-**Note:** These settings will automatically set zed's default theme to `Catppuccin Mocha` and terminal fonts to `FiraCode Nerd Font`
+**Note:** These settings will automatically change zed's active theme to `Catppuccin Mocha` along with ui & terminal fonts set to `FiraCode Nerd Font`
 
 ## Dev Tools
 
