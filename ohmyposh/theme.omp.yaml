@@ -57,6 +57,9 @@ blocks:
           branch_icon: "\ue0a0 "
           fetch_user: true
           fetch_status: true
+          fetch_upstream_icon: true
+          upstream_icons:
+            github.com: "\uea84 "
   - type: prompt
     alignment: left
     newline: true
