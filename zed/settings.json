@@ -1,0 +1,17 @@
+{
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "ui_font_size": 20,
+  "buffer_font_size": 18,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Atelier Cave Dark"
+  },
+  "cursor_shape": "block",
+  "terminal": {
+    "font_family": "FiraCode Nerd Font"
+  }
+}
