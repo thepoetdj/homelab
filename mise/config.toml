@@ -1,4 +1,5 @@
 [tools]
 bun = "latest"
 deno = "latest"
+rust = "1.85.0"
 usage = "latest"
