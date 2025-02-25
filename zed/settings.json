@@ -14,5 +14,6 @@
   "cursor_shape": "block",
   "terminal": {
     "font_family": "FiraCode Nerd Font"
-  }
+  },
+  "auto_update": false
 }
