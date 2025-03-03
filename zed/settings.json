@@ -15,5 +15,10 @@
   "terminal": {
     "font_family": "FiraCode Nerd Font"
   },
-  "auto_update": false
+  "auto_update": false,
+  "languages": {
+    "TOML": {
+      "tab_size": 2
+    }
+  }
 }
