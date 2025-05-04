@@ -16,5 +16,8 @@
     "font_family": "FiraCode Nerd Font"
   },
   "auto_update": false,
-  "tab_size": 2
+  "tab_size": 2,
+  "file_types": {
+    "Tera (HTML)": ["html"]
+  }
 }
