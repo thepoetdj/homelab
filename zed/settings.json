@@ -1,4 +1,5 @@
 {
+  "format_on_save": "off",
   "icon_theme": "Catppuccin Mocha",
   "telemetry": {
     "metrics": false,
