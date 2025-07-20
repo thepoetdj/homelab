@@ -1,7 +1,9 @@
 [tools]
 bun = "latest"
 deno = "latest"
+go = "latest"
 k3d = "latest"
+python = "latest"
 quarkus = "3.19.1"
 rust = "1.85.0"
 usage = "latest"
