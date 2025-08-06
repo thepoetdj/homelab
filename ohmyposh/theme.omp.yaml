@@ -60,6 +60,8 @@ blocks:
           fetch_upstream_icon: true
           upstream_icons:
             github.com: "\uea84 "
+      - type: python
+        style: plain
   - type: prompt
     alignment: left
     newline: true
