@@ -2,9 +2,14 @@
 bun = "latest"
 deno = "latest"
 go = "latest"
+jq = "latest"
 k3d = "latest"
 python = "latest"
 quarkus = "3.19.1"
 rust = "1.85.0"
 usage = "latest"
+uv = "latest"
 zola = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
