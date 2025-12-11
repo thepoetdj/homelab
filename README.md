@@ -26,6 +26,21 @@ oh-my-posh font install FiraCode
 eval "$(oh-my-posh init zsh --config /opt/homelab/ohmyposh/theme.omp.yaml)"
 ```
 
+### Ghostty
+
+1. Install `ghostty`
+
+```bash
+snap install ghostty --classic
+```
+
+2. Create a symbolic link to `home/ghostty/config`
+
+```bash
+mkdir ~/.config/ghostty && cd ~/.config/ghostty
+ln -s /opt/homelab/ghostty/config
+```
+
 ## Editors
 
 ### Zed
