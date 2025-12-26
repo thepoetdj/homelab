@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.cursorStyle": "block",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.languageServer": "None",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "extensions.autoUpdate": false
+}

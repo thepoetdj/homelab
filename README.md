@@ -56,7 +56,20 @@ mkdir ~/.config/zed && cd ~/.config/zed
 ln -s /opt/homelab/zed/settings.json
 ```
 
-**Note:** These settings will automatically change zed's active theme to `Catppuccin Mocha` along with ui & terminal fonts set to `FiraCode Nerd Font`
+**Note:** These settings will automatically change Zed's active theme to `Catppuccin Mocha` along with ui & terminal fonts set to `FiraCode Nerd Font`
+
+## VS Code
+
+1. [Download](https://code.visualstudio.com/Download) and install VS Code
+
+2. Create a symlink of `homelab/code/settings.json`
+
+```bash
+cd ~/.config/Code/User
+ln -s /opt/homelab/code/settings.json
+```
+
+**Note:** These settings will automatically change VS Code's active theme to `Catppuccin Mocha` along with ui & terminal fonts set to `FiraCode Nerd Font`
 
 ## Dev Tools
 
