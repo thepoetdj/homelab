@@ -7,6 +7,7 @@
   "editor.fontSize": 16,
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
   "editor.cursorStyle": "block",
+  "editor.formatOnSave": false,
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "python.languageServer": "None",
