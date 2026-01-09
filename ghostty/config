@@ -2,5 +2,7 @@ theme = Catppuccin Macchiato
 
 background-opacity = 0.95
 
+font-size = 14
+
 # preserve TERMINFO when sudoing
 shell-integration-features = sudo
