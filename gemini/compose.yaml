@@ -1,0 +1,22 @@
+name: gemini-cli
+
+services:
+  gemini:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: gemini-cli:local
+    container_name: gemini-cli # doesn't work; see: https://github.com/containers/podman-compose/issues/1430
+    user: "${UID}:${GID}"
+    # Keep it interactive — gemini is a TUI
+    init: true
+    stdin_open: true
+    tty: true
+    environment:
+      HOME: /home/gemini
+    volumes:
+      - ${PWD}:/workspace
+      - gemini-data:/home/gemini/.gemini
+
+volumes:
+  gemini-data:

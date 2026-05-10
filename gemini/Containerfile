@@ -1,0 +1,15 @@
+FROM node:22-slim
+
+RUN npm install -g @google/gemini-cli \
+    && npm cache clean --force
+
+RUN addgroup --system gemini && adduser node gemini
+
+# Ensure workspace and home exist with node ownership
+RUN mkdir -p /workspace /home/gemini \
+    && chown -R node:node /workspace /home/gemini
+
+USER node
+WORKDIR /workspace
+
+ENTRYPOINT ["gemini"]

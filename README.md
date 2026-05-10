@@ -13,15 +13,11 @@ cd homelab
 ### Oh My Posh
 
 1. [Install](https://ohmyposh.dev/docs/installation/linux) `oh-my-posh`
-
 2. Install `FiraCode Nerd Fonts`
-
 ```bash
 oh-my-posh font install FiraCode
 ```
-
 3. Add this line in `~/.zshrc` to load custom theme during oh-my-posh initialization:
-
 ```bash
 eval "$(oh-my-posh init zsh --config /opt/homelab/ohmyposh/theme.omp.yaml)"
 ```
@@ -29,13 +25,10 @@ eval "$(oh-my-posh init zsh --config /opt/homelab/ohmyposh/theme.omp.yaml)"
 ### Ghostty
 
 1. Install `ghostty`
-
 ```bash
 snap install ghostty --classic
 ```
-
 2. Create a symbolic link to `home/ghostty/config`
-
 ```bash
 mkdir ~/.config/ghostty && cd ~/.config/ghostty
 ln -s /opt/homelab/ghostty/config
@@ -46,11 +39,8 @@ ln -s /opt/homelab/ghostty/config
 ### Zed
 
 1. [Download](https://zed.dev/download) and install Zed editor
-
 2. The zed settings of this repository requires `Catppuccin Theme` zed extension to be installed. Open `zed: extensions` (press `Ctrl + Shift + P`) and search for `Catppuccin Theme`
-
 3. Create a symlink of `homelab/zed/settings.json`
-
 ```bash
 mkdir ~/.config/zed && cd ~/.config/zed
 ln -s /opt/homelab/zed/settings.json
@@ -61,9 +51,7 @@ ln -s /opt/homelab/zed/settings.json
 ## VS Code
 
 1. [Download](https://code.visualstudio.com/Download) and install VS Code
-
 2. Create a symlink of `homelab/code/settings.json`
-
 ```bash
 cd ~/.config/Code/User
 ln -s /opt/homelab/code/settings.json
@@ -76,16 +64,29 @@ ln -s /opt/homelab/code/settings.json
 ### mise
 
 1. [Install](https://mise.jdx.dev/getting-started.html#installing-mise-cli) mise CLI
-
 2. Add this at the end of `~/.zshrc` if not present already:
-
 ```bash
 eval "$(/path/to/mise activate zsh)"
 ```
-
 3. Create a symlink of `homelab/mise/config.toml`
-
 ```bash
 mkdir ~/.config/mise && cd ~/.config/mise
 ln -s /opt/homelab/mise/config.toml
 ```
+
+## Agentic AI
+
+### Gemini CLI
+
+1. Ensure [Podman](https://podman.io) and [podman-compose](https://github.com/containers/podman-compose) are installed
+2. Build image:
+```bash
+podman compose -f /opt/homelab/gemini/compose.yaml build --no-cache
+```
+3. Create gemini alias in `~/.zshrc`:
+```bash
+echo 'alias gemini="UID=$(id -u) GID=$(id -g) podman compose -f /opt/homelab/gemini/compose.yaml run --rm gemini"'
+```
+**Note:** Due to podman's rootless behavior, we mount working directory to `/workspace` with system's `User ID` and `Group ID`
+
+4. Run Gemini CLI from the directory of your choice with `gemini` command alias
