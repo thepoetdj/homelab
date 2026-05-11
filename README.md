@@ -85,8 +85,6 @@ podman compose -f /opt/homelab/gemini/compose.yaml build --no-cache
 ```
 3. Create gemini alias in `~/.zshrc`:
 ```bash
-echo 'alias gemini="UID=$(id -u) GID=$(id -g) podman compose -f /opt/homelab/gemini/compose.yaml run --rm gemini"'
+echo 'alias gemini="podman compose -f /opt/homelab/gemini/compose.yaml run --rm gemini"'
 ```
-**Note:** Due to podman's rootless behavior, we mount working directory to `/workspace` with system's `User ID` and `Group ID`
-
 4. Run Gemini CLI from the directory of your choice with `gemini` command alias

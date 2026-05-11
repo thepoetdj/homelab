@@ -7,7 +7,7 @@ services:
       dockerfile: Containerfile
     image: gemini-cli:local
     container_name: gemini-cli # doesn't work; see: https://github.com/containers/podman-compose/issues/1430
-    user: "${UID}:${GID}"
+    user: "0:0" # https://oneuptime.com/blog/post/2026-03-17-configure-volume-options-rootless-podman/view#handling-root-owned-files
     # Keep it interactive — gemini is a TUI
     init: true
     stdin_open: true
@@ -15,7 +15,7 @@ services:
     environment:
       HOME: /home/gemini
     volumes:
-      - ${PWD}:/workspace
+      - ${PWD}:/workspace:U
       - gemini-data:/home/gemini/.gemini
 
 volumes:
