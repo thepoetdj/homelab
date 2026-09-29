@@ -1,7 +1,8 @@
 [tools]
+agy = "latest"
 "aqua:rtk-ai/rtk" = "latest"
+bat = "latest"
 bun = "latest"
-claude = "latest"
 deno = "latest"
 go = "latest"
 jq = "latest"
