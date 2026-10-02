@@ -88,3 +88,13 @@ podman compose -f /opt/homelab/gemini/compose.yaml build --no-cache
 echo 'alias gemini="podman compose -f /opt/homelab/gemini/compose.yaml run --rm gemini"'
 ```
 4. Run Gemini CLI from the directory of your choice with `gemini` command alias
+
+### Pi
+
+Create a symbolic link to `homelab/pi/settings.json`:
+
+```bash
+mkdir -p ~/.pi/agent && cd ~/.pi/agent
+ln -s /opt/homelab/pi/settings.json
+```
+
