@@ -1,17 +1,12 @@
 [tools]
-agy = "latest"
-"aqua:rtk-ai/rtk" = "latest"
 bat = "latest"
-deno = "latest"
-go = "latest"
 jq = "latest"
-k3d = "latest"
-pi = "latest"
+node = "26"
+pi = "1.5.0"
+pnpm = "12"
 python = "latest"
-rust = "latest"
 usage = "latest"
 uv = "latest"
-zola = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
