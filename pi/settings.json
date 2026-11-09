@@ -1,10 +1,9 @@
 {
-  "lastChangelogVersion": "1.0.0",
+  "lastChangelogVersion": "1.5.0",
   "npmCommand": [
-    "deno",
-    "run",
-    "-A",
-    "npm:npm"
+    "pnpm",
+    "dlx",
+    "npm"
   ],
   "packages": [
     "npm:pi-antigravity"
