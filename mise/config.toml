@@ -1,5 +1,6 @@
 [tools]
 bat = "latest"
+gh = "2"
 jq = "latest"
 node = "26"
 pi = "1.5.0"
@@ -11,3 +12,6 @@ uv = "latest"
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
 experimental = true
+
+[settings.github]
+credential_command = 'gh auth token --hostname "$MISE_CREDENTIAL_HOST"'
